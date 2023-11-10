@@ -10,16 +10,17 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
-    animation: 1s ease-in-out fadeInFromLeft;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
+    animation: slideIn 1s forwards;
 }
 
 h2 {
+    animation: slideIn 1s forwards;
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -27,7 +28,8 @@ h2 {
 p {
     margin-bottom: 10px;
     font-size: 16px;
-
+    animation: slideInLeft 1s forwards;
+    /*animation: 1s ease-in-out fadeInFromLeft;*/
 }
 
 .img_horizontal {
@@ -87,16 +89,29 @@ footer {
     border-radius: 5px;
 }
 
-@keyframes fadeInFromLeft {
-    0% {
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
         opacity: 0;
-        transform: translatex(-200px);
     }
-    100% {
-        opacity: 1;
+    to {
         transform: translateY(0);
+        opacity: 1;
     }
 }
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 /*--------------------------------------------------SIDEBAR----------------------------------------*/
 
