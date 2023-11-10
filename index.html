@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авто-спорт</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="container">
+    <h1>Авто-спорт</h1>
+
+    <h2>Описание хобби</h2>
+    <p>
+        Авто-спорт - это увлекательное хобби, которое объединяет людей с любовью к автомобилям и скорости.
+        Здесь вы можете испытать адреналин и насладиться гонками на треке или участии в ралли.
+        Это хобби требует навыков вождения, знания техники и способности принимать решения быстро.
+        Авто-спорт предлагает возможность испытать свои грани и преодолеть себя.
+    </p>
+
+    <h2>Мои авто-спортивные приключения</h2>
+    <p>Я активно участвую в авто-спорте и имею немало впечатляющих историй. Одно из моих незабываемых приключений
+        связано с участием в авто-гонке в грязи. Это была захватывающая гонка, которая проходила в городе Менделеевск.
+        Я принимал участие как гонщик и соревновался с опытными пилотами на бездорожье, покрытом грязью и болотом.
+        Быстрота, мастерство и принятие решений на ходу были ключевыми факторами успеха в этой гонке. Я с огромным
+        адреналином управлял своим автомобилем по труднопроходимым трассам, стараясь держаться впереди соперников.
+        В конечном итоге, благодаря моему навыку и смелости, я смог занять почетное место на пьедестале победителей.
+    </p>
+
+    <p>Помимо участия в гонках, я также имел возможность быть частью судейского состава в авто-спортивных событиях
+        в городах Киров и Самара. В роли судьи, я был ответственным за обеспечение справедливости и соблюдение правил
+        соревнований. Наблюдая за гонками и оценивая действия участников, я получил глубокое понимание организации
+        и проведении авто-спортивных мероприятий. Это был уникальный опыт, который позволил мне увидеть авто-спорт
+        с другой стороны и лучше понять его сложности и требования.
+    </p>
+
+    <h2>Фотографии</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numberText">1 / 7</div>
+            <img src="img/img_1.jpg" style="width:100%" alt="img_1">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">2 / 7</div>
+            <img src="img/img_2.jpg" style="width:100%" alt="img_2">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">3 / 7</div>
+            <img class="img_horizontal" src="img/img_3.jpg" style="width:100%" alt="img_3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">4 / 7</div>
+            <img class="img_horizontal" src="img/img_4.jpg" style="width:100%" alt="img_3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">5 / 7</div>
+            <img class="img_horizontal" src="img/img_5.jpg" style="width:100%" alt="img_3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">6 / 7</div>
+            <img class="img_horizontal" src="img/img_6.jpg" style="width:100%" alt="img_3">
+        </div>
+        <div class="mySlides fade">
+            <div class="numberText">7 / 7</div>
+            <img class="img_horizontal" src="img/img_7.jpg" style="width:100%" alt="img_3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+
+    <h2>Видео</h2>
+    <p>Посмотрите некоторые видео о авто-спорте:</p>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/TTQC_GsyzRU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/BXtG2Z_PgGA" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2>Контакты</h2>
+    <p>Если у вас есть вопросы или вы хотите связаться со мной, вот мои контактные данные:</p>
+    <ul>
+        <li>Email: sergejcernuhin77@gmail.com</li>
+        <li>Телефон: +7 919 625-04-56</li>
+    </ul>
+
+    <footer>
+        &copy; 2023 Авто-спорт. Все права защищены.
+    </footer>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+</body>
+</html>
